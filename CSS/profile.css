@@ -1,75 +1,122 @@
-body{
-    background-color:#94d2bd;
-    margin: 40px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: #f4f4f9;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 
-h1{
-    font-size: 50px;
-}
-
-.navbar{
-    background-color: #ff85a2;
+.navbar {
+    background-color: #9ad3bc;
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
 }
-#name{
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:cornflowerblue;
+
+.profile {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.bio{
-    background-color: #ffff00;
-    padding-left:20px ;
-
-}
-.text{
-    color:red;
-    font-size: 40px;
-}
-#unique{
-    color: blue;
+#name {
+    font-size: 24px;
     font-weight: bold;
+    color: #333;
+    margin-bottom: 10px; 
 }
 
-img{
-    border-radius:8px;
-    background-color: white;
-    padding: 1%;
-    width: 100%;
-    margin-top: 12px;
- 
+.bio p {
+    font-size: 16px; 
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 5px; 
+}
+
+.bio {
+    background-color: #f9f9f9; 
+    border-left: 5px solid #ff6699; 
+    padding: 10px;
+    border-radius: 5px; 
 }
 
 
-button{
+.bio, .gallery, .contact-form {
+    margin-bottom: 20px;
+}
+
+button {
     cursor: pointer;
-    width: 100px;
-    background-color: #ff85a2;
+    background-color: #ff6699;
     color: white;
     font-weight: bold;
     border: none;
-    padding: 5px;
+    padding: 10px 20px;
     border-radius: 5px;
-}
-.profile{
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-}
-.bio{
-    background-color: #fff0f5;
-    border-radius: 8px;
-    color: #333;
-    font-size: 14px;
-    font-weight: bold;
+    transition: background-color 0.3s ease, 
+    transform 0.5s ease  ;
 }
 
-.footer{
-    background-color: aqua;
+.new_button{
+    background-color: green;
+    transform: scale(1.05);
 }
+
+/* button:hover {
+    background-color: #e57373;
+} */
+
+button.expand-details {
+    background-color: #9ad3bc;
+}
+
+.additional-details.hidden {
+    display: none;
+}
+
+.additional-details.show {
+    display: block;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.gallery-container img {
+    flex: 1 1 200px;
+    margin: 5px;
+    width: calc(50% - 10px); 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.contact-form form input, .contact-form form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form form button {
+    grid-column: span 2;
+}
+
+footer {
+    background-color: #b2ebf2;
+    padding: 10px;
+    text-align: center;
+}
+

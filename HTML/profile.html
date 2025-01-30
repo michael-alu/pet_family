@@ -7,31 +7,44 @@
     </head>
     <body>
         <main>
-            <header>
-                <nav>
-                    <ul class="navbar">
-                        <li><a href="./profile.html">Profile</a></li>
-                        <li><a href="./chats.html">Chats</a></li>
-                        <li>Connect</li>
-                        <li >Logout</li>
-                    </ul>
-                </nav>
-            </header>
             <section class="profile">
                 <h1 id="name">Bambi</h1>
                 <div class="bio">
-                    <p >Hi I am Bambi ,Hot Single Chihuahua in your area</p>
-                    <p >Breed: Chihuahua | Owner: Hauwa Bello | Location: Kigali | Price: 400$ | Age: 3 years |Health Status: Excellent</p>
+                    <p>Hi, I am Bambi, a hot single Chihuahua in your area.</p>
+                    <p>Breed: Chihuahua | Owner: Hauwa Bello | Location: Kigali | Price: $400 | Age: 3 years | Health Status: Excellent</p>
+                    <button class="expand-details">More About Me</button>
+                    <div class="additional-details hidden">
+                        <p>Temperament: Friendly and energetic. Loves cuddles and playtime.</p>
+                        <p>Likes: Playing fetch, cuddles, treats. Dislikes: Loud noises, being alone.</p>
+                    </div>
                 </div>
-                
-                <img class="profile-img"  src="../IMAGES/cute dog.jpg"/> 
-                <button>Add me</button>
+                <img class="profile-img" src="../IMAGES/cute dog.jpg" alt="Bambi the Chihuahua">
+                <button id="add_me_button">Add me</button>
+                <div class="gallery">
+                    <h2>Gallery</h2>
+                    <div class="gallery-container">
+                        <img src="../IMAGES/cute dog.jpg" alt="Bambi playing">
+                        <img src="../IMAGES/cute dog.jpg" alt="Bambi sleeping">
+                    
+                    </div>
+                </div>
+
+               
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <input id="name_input" type="text" placeholder="Your Name">
+                        <input id="email" type="email" placeholder="Your Email">
+                        <textarea id="text_area" placeholder="Message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </section>
-           
-            
         </main>
+        
+        
         <footer class="footer">
-            <p>This is out footer</p>
+            <p>This is our footer</p>
         </footer>
     </body>
 </html> 
